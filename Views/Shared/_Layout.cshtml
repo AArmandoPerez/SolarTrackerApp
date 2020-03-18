@@ -32,7 +32,7 @@
     <script src="~/Scripts/moment.js"></script>
 
 </head>
-<body id="body" class="hold-transition skin-blue sidebar-mini ">
+<body id="body" class="hold-transition skin-blue sidebar-mini sidebar-collapse">
     <script type="text/javascript">
     var ROOT = '@Url.Content("~")';
     </script>
@@ -43,7 +43,7 @@
                 <!-- mini logo for sidebar mini 50x50 pixels -->
                 @*<span class="logo-mini">Dalton</span>*@
                 <!-- logo for regular state and mobile devices -->
-                <span class="logo-lg"><b>Jaguar</b></span>
+                <span class="logo-lg"><b>Solar Tracker</b></span>
             </a>
             <!-- Header Navbar: style can be found in header.less -->
             <nav class="navbar navbar-static-top">
@@ -72,14 +72,14 @@
                     <li class="header">Menu</li>
                     <li class="active treeview" style="height: auto;">
                         <a href="#">
-                            <i class="fa fa-th"></i> <span>Opciones</span>
+                            <i class="fa fa-th"></i> <span>Options</span>
                             <span class="pull-right-container">
                                 <i class="fa fa-angle-left pull-right"></i>
                             </span>
                         </a>
                         <ul class="treeview-menu" style="display: none;">
-                            <li><a href="index.html"><i class="fa fa-dashboard"></i>Home Page</a></li>
-                            <li class="active"><a href="index2.html"><i class="fa fa-cog"></i>Settings</a></li>
+                            <li><a href="@Url.Action("DashBoard", "Home")" ><i class="fa fa-dashboard"></i>Home Page</a></li>
+                            <li class="active"><a href="@Url.Action("Contact", "Home")"><i class="fa fa-cog"></i>Settings</a></li>
                         </ul>
                     </li> 
                 </ul>

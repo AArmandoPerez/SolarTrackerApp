@@ -1,0 +1,86 @@
+﻿
+@{
+    ViewBag.Title = "DashBoard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    <script src="~/Scripts/JsViews/suncalc.js"></script>
+    <script src="~/Scripts/JsViews/JsDashBoard.js"></script>
+}
+
+
+<div class="container">
+    <section class="content-header">
+        <h1>
+            Dashboard
+            <small>Control panel</small>
+        </h1>
+    </section>
+    <br />
+    <div class="row">
+        <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-aqua">
+                <div class="inner">
+                    <h3 id="relativeHumedityH3">0<sup style="font-size: 20px">%</sup></h3>
+
+                    <p>Humedad Relativa</p>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-tint"></i>
+                </div>
+                <a href="#" class="small-box-footer"><label id="lastHumedity">00:00:00 AM </label>   <i class="fa fa-tint"></i></a>
+            </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-green">
+                <div class="inner">
+                    <h3>0<sup style="font-size: 20px">°C.</sup></h3>
+
+                    <p>Temperatura CPU </p>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-thermometer-half"></i>
+                </div>
+                <a href="#" class="small-box-footer">00:00:00 AM <i class="fa fa-thermometer-half"></i></a>
+            </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-yellow">
+                <div class="inner">
+                    <h3>20<sup style="font-size: 20px">°</sup></h3>
+
+                    <p>Ángulo del panel solar</p>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-medium"></i>
+                </div>
+                <a href="#" class="small-box-footer">00:00:00 AM <i class="fa fa-medium"></i></a>
+            </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-red">
+                <div class="inner">
+                    <h3 id="h3azimut">0</h3>
+
+                    <p>Posición del Sol</p>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-sun-o"></i>
+                </div>
+                <a id="lastazimut" href="#" class="small-box-footer">00:00:00 AM <i class="fa fa-sun-o"></i></a>
+            </div>
+        </div>
+        <!-- ./col -->
+    </div>
+
+</div>
+
+
+
+
